@@ -82,7 +82,7 @@ def update_user(user_id, username, language, call_icon, message_icon, user_image
             'message_icon':message_icon,
 
             # 'user_class': user_class,
-            'user_image': filename,
+            'user_image': user_image,
             'personal_info': {
                 'status':{
                     'user_designation':user_designation,
