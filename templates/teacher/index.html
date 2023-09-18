@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Flask App</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container mt-5 mb-5">
+        <h1 class="text-center">" __Teacher Page__ "</h1>
+        <form action="/teacher/create_user" method="POST" enctype="multipart/form-data">
+
+            <h3>Header Section ----</h3>
+            <div class="form-group">
+                <label for="file">User Image:</label>
+                <input type="file" class="form-control-file" name="file">
+            </div>
+
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" class="form-control" name="username" required>
+            </div>
+
+            <div class="form-group">
+                <label for="language">Language:</label>
+                <input type="text" class="form-control" name="language" required>
+            </div>
+
+            <div class="form-group">
+                <label for="call_icon">Call Icon:</label>
+                <input type="text" class="form-control" name="call_icon" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message_icon">Message Icon:</label>
+                <input type="text" class="form-control" name="message_icon" required>
+            </div>
+
+            <h3>User Profile----</h3>
+            <h5>Status</h5>
+            <div class="form-group">
+                <label for="user_designation">User Designation:</label>
+                <input type="text" class="form-control" name="user_designation">
+            </div>
+
+            <div class="form-group">
+                <label for="user_description">User Description:</label>
+                <textarea class="form-control" name="user_description"></textarea>
+            </div>
+            <h5>About</h5>
+            <div class="form-group">
+                <label for="user_about">About:</label>
+                <textarea class="form-control" name="user_about"></textarea>
+            </div>
+            <h5>UserID & Password</h5>
+            <div class="form-group">
+                <label for="useridname">User ID Name:</label>
+                <input type="text" class="form-control" name="useridname">
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" class="form-control" name="password">
+            </div>
+            <h5>Contact</h5>
+            <div class="form-group">
+                <label for="phone">Phone:</label>
+                <input type="text" class="form-control" name="phone">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" name="email">
+            </div>
+
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <input type="text" class="form-control" name="address">
+            </div>
+            <h3>Academic-----</h3>
+            <div class="form-group">
+                <label for="department">Department:</label>
+                <input type="text" class="form-control" name="department">
+            </div>
+
+            <div class="form-group">
+                <label for="experience">Experience:</label>
+                <input type="text" class="form-control" name="experience">
+            </div>
+
+            <div class="form-group">
+                <label for="specialization">Specialization:</label>
+                <input type="text" class="form-control" name="specialization">
+            </div>
+            <h3>Attendence-----</h3>
+            <div class="form-group">
+                <label for="totalClasses">Total Classes:</label>
+                <input type="text" class="form-control" name="totalClasses">
+            </div>
+
+            <div class="form-group">
+                <label for="attendedClasses">Attended Classes:</label>
+                <input type="text" class="form-control" name="attendedClasses">
+            </div>
+            <h3>Performance-----</h3>
+            <h5>Class Grades</h5>
+            <div class="form-group">
+                <label for="topic1">Class 10:</label>
+                <input type="text" class="form-control" name="topic1">
+            </div>
+
+            <div class="form-group">
+                <label for="topic2">Class 12:</label>
+                <input type="text" class="form-control" name="topic2">
+            </div>
+            <h5>Awards</h5>
+            <div class="form-group">
+                <label for="award">Award:</label>
+                <input type="text" class="form-control" name="award">
+            </div>
+            <h3>Interset-----</h3>
+
+            <div class="form-group">
+                <label for="hobbies">Hobbies:</label>
+                <input type="text" class="form-control" name="hobbies">
+            </div>
+
+            <div class="form-group">
+                <label for="favoriteTopic">Favorite Topic:</label>
+                <input type="text" class="form-control" name="favoriteTopic">
+            </div>
+
+
+            <button type="submit" class="btn btn-primary">Create User</button>
+        </form>
+    </div>
+
+</body>
+
+</html>

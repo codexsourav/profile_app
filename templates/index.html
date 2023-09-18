@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Documentation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .section {
+            margin-top: 20px;
+        }
+
+        .endpoint {
+            background-color: #f5f5f5;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .code {
+            background-color: #f8f8f8;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>API Documentation</h1>
+    <p style="text-align: center;">Made By - Sourav Bapari</p>
+
+    <!-- Student Section -->
+    <div class="section">
+        <h2>Student API</h2>
+
+        <!-- Create Student Profile Endpoint -->
+        <div class="endpoint">
+            <h3>Create Student Profile</h3>
+            <p>Create a new student profile.</p>
+            <div class="code">
+                <pre>
+                    POST /student/create_student_profile
+                    Parameters:
+                    - user_id
+                    - username
+                    - password
+                    - user_class
+                    - status_title
+                    - status_description
+                    - about
+                    - phone
+                    - email
+                    - address
+                    - parents
+                    - image (File)
+                </pre>
+            </div>
+        </div>
+
+        <!-- Get Student Profile Endpoint -->
+        <div class="endpoint">
+            <h3>Get Student Profile</h3>
+            <p>Retrieve a student's profile by user_id.</p>
+            <div class="code">
+                <pre>
+                    GET /student/get_user/{user_id}
+                </pre>
+            </div>
+        </div>
+
+        <!-- Update Student Profile Endpoint -->
+        <div class="endpoint">
+            <h3>Update Student Profile</h3>
+            <p>Update a student's profile data by user_id.</p>
+            <div class="code">
+                <pre>
+                    PUT /student/update_student_profile/{user_id}
+                    Parameters (form data):
+                    - username
+                    - password
+                    - user_class
+                    - status_title
+                    - status_description
+                    - about
+                    - phone
+                    - email
+                    - address
+                    - parents
+                    - image (File)
+                </pre>
+            </div>
+        </div>
+
+        <!-- Search Students Endpoint -->
+        <div class="endpoint">
+            <h3>Search Students</h3>
+            <p>Search for students by username, user_id, phone, or email.</p>
+            <div class="code">
+                <pre>
+                    GET /student/search/{query}
+                </pre>
+            </div>
+        </div>
+
+        <!-- Other Student Endpoints -->
+        <!-- Include other student endpoints here with descriptions -->
+    </div>
+
+    <!-- Teacher Section -->
+    <!-- Teacher Section -->
+    <div class="section">
+        <h2>Teacher API</h2>
+
+        <!-- Create Teacher Profile Endpoint -->
+        <div class="endpoint">
+            <h3>Create Teacher Profile</h3>
+            <p>Create a new teacher profile.</p>
+            <div class="code">
+                <pre>
+                POST /teacher/create_user
+                Parameters (form data):
+                - username
+                - language
+                - call_icon
+                - message_icon
+                - user_designation
+                - user_description
+                - user_about
+                - useridname
+                - password
+                - phone
+                - email
+                - address
+                - department
+                - experience
+                - specialization
+                - totalClasses
+                - attendedClasses
+                - Topic1
+                - Topic2
+                - award
+                - hobbies
+                - favoriteTopic
+                - file (File)
+            </pre>
+            </div>
+        </div>
+
+        <!-- Get Teacher Profile Endpoint -->
+        <div class="endpoint">
+            <h3>Get Teacher Profile</h3>
+            <p>Retrieve a teacher's profile by user_id.</p>
+            <div class="code">
+                <pre>
+                GET /teacher/get_user/{user_id}
+            </pre>
+            </div>
+        </div>
+
+        <!-- Update Teacher Profile Endpoint -->
+        <div class="endpoint">
+            <h3>Update Teacher Profile</h3>
+            <p>Update a teacher's profile data by user_id.</p>
+            <div class="code">
+                <pre>
+                PUT /teacher/update_user/{user_id}
+                Parameters (form data):
+                - username
+                - language
+                - call_icon
+                - message_icon
+                - user_designation
+                - user_description
+                - user_about
+                - useridname
+                - password
+                - phone
+                - email
+                - address
+                - department
+                - experience
+                - specialization
+                - totalClasses
+                - attendedClasses
+                - Topic1
+                - Topic2
+                - award
+                - hobbies
+                - favoriteTopic
+                - file (File)
+            </pre>
+            </div>
+        </div>
+
+        <!-- Search Teachers Endpoint -->
+        <div class="endpoint">
+            <h3>Search Teachers</h3>
+            <p>Search for teachers by username, user_id, phone, or email.</p>
+            <div class="code">
+                <pre>
+                GET /teacher/search/{query}
+            </pre>
+            </div>
+        </div>
+
+        <!-- Other Teacher Endpoints -->
+        <!-- Include other teacher endpoints here with descriptions -->
+    </div>
+
+    <!-- Parent Section -->
+    <div class="section">
+        <h2>Parent API</h2>
+
+        <!-- Create Parent Profile Endpoint -->
+        <div class="endpoint">
+            <h3>Create Parent Profile</h3>
+            <p>Create a new parent profile.</p>
+            <div class="code">
+                <pre>
+                POST /parent/create_parent_profile
+                Parameters (form data):
+                - parent_useridname
+                - parent_password
+                - parent_name
+                - parent_designation
+                - parent_age
+                - parent_gender
+                - parent_description
+                - parent_about
+                - parent_phone
+                - parent_email
+                - parent_StreetAddress
+                - parent_city
+                - parent_PostalCode
+                - parent_country
+                - parent_Apartment
+                - parent_state
+                - file (File)
+            </pre>
+            </div>
+        </div>
+
+        <!-- Get Parent Profile Endpoint -->
+        <div class="endpoint">
+            <h3>Get Parent Profile</h3>
+            <p>Retrieve a parent's profile by parent_useridname.</p>
+            <div class="code">
+                <pre>
+                GET /parent/get_parent_data/{parent_useridname}
+            </pre>
+            </div>
+        </div>
+
+        <!-- Update Parent Profile Endpoint -->
+        <div class="endpoint">
+            <h3>Update Parent Profile</h3>
+            <p>Update a parent's profile data by parent_useridname.</p>
+            <div class="code">
+                <pre>
+                PUT /parent/update_parent/{parent_useridname}
+                Parameters (form data):
+                - parent_useridname
+                - parent_name
+                - parent_designation
+                - parent_description
+                - parent_age
+                - parent_gender
+                - parent_about
+                - parent_phone
+                - parent_email
+                - parent_country
+                - parent_state
+                - parent_city
+                - parent_StreetAddress
+                - parent_Apartment
+                - parent_PostalCode
+                - file (File)
+            </pre>
+            </div>
+        </div>
+
+        <!-- Search Parents Endpoint -->
+        <div class="endpoint">
+            <h3>Search Parents</h3>
+            <p>Search for parents by parent_useridname, parent_phone, or parent_email.</p>
+            <div class="code">
+                <pre>
+                GET /parent/search/{query}
+            </pre
+
+
+</body>
+
+</html>

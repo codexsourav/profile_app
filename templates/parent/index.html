@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Create Parent Profile</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="container mb-5">
+        <div class="row">
+            <div class="col-md">
+                <h1 class="text-center m-5">Create Parent Profile</h1>
+                <form method="POST" action="/parent/create_parent_profile" enctype="multipart/form-data">
+
+                    <label class="form-label" for="parent_useridname">Parent User ID</label>
+                    <input class="form-control" type="text" name="parent_useridname" id="parent_useridname"
+                        required><br>
+
+                    <label class="form-label" for="parent_password">Password</label>
+                    <input class="form-control" type="password" id="parent_password" name="parent_password"
+                        placeholder="Enter your password"><br>
+
+                    <label class="form-label" for="parent_name">Parent Name</label>
+                    <input class="form-control" type="text" name="parent_name" id="parent_name" required><br>
+
+                    <label class="form-label" for="parent_designation">Parent Designation</label>
+                    <input class="form-control" type="text" name="parent_designation" id="parent_designation"
+                        required><br>
+
+                    <label class="form-label" for="parent_age">Parent Age</label>
+                    <input class="form-control" type="text" name="parent_age" id="parent_age" required><br>
+
+                    <label class="form-label" for="parent_gender">Parent Gender</label>
+                    <input class="form-control" type="text" name="parent_gender" id="parent_gender" required><br>
+
+                    <label class="form-label" for="parent_description">Parent Description:</label>
+                    <textarea class="form-control" name="parent_description" id="parent_description" rows="4"
+                        cols="50"></textarea><br>
+
+                    <label class="form-label" for="parent_about">About Parent:</label>
+
+
+                    <textarea class="form-control" name="parent_about" id="parent_about" rows="4"
+                        cols="50"></textarea><br>
+
+                    <label class="form-label" for="parent_phone">Parent Phone</label>
+                    <input class="form-control" type="tel" name="parent_phone" id="parent_phone"><br>
+
+                    <label class="form-label" for="parent_email">Parent Email</label>
+                    <input class="form-control" type="email" name="parent_email" id="parent_email"><br>
+
+                    <label class="form-label" for="parent_StreetAddress">Street Address</label>
+                    <input class="form-control" type="text" name="parent_StreetAddress" id="parent_StreetAddress"><br>
+
+                    <label class="form-label" for="parent_city">City</label>
+                    <input class="form-control" type="text" name="parent_city" id="parent_city"><br>
+
+                    <label class="form-label" for="parent_PostalCode">Postal Code</label>
+                    <input class="form-control" type="text" name="parent_PostalCode" id="parent_PostalCode"><br>
+
+                    <label class="form-label" for="parent_country">Country</label>
+                    <input class="form-control" type="text" name="parent_country" id="parent_country"><br>
+
+                    <label class="form-label" for="parent_Apartment">Apartment</label>
+                    <input class="form-control" type="text" name="parent_Apartment" id="parent_Apartment"><br>
+
+                    <label class="form-label" for="parent_state">State</label>
+                    <input class="form-control" type="text" name="parent_state" id="parent_state"><br>
+
+                    <label class="form-label" for="file">Upload Parent Image</label>
+                    <input class="form-control" type="file" name="file" id="file" accept="image/*"><br>
+
+                    <input class="btn btn-primary" type="submit" value="Submit">
+                </form>
+            </div>
+            <div class="col-md">
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
