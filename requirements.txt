@@ -8,3 +8,4 @@ Jinja2
 MarkupSafe
 pymongo
 Werkzeug
+Gunicorn
